@@ -3,8 +3,12 @@ body {
     margin: 0;
 }
 h4 {
-	padding: 5%
+
 }
+p {
+
+}
+
 html, body, #map {
     height: 90%;
     width: 100vw;
