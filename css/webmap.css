@@ -2,14 +2,17 @@ body {
     padding: 0;
     margin: 0;
 }
-h4 {
 
-}
-p {
-
-}
-
-html, body, #map {
+html, body {
     height: 90%;
-    width: 100vw;
+    width: 95vw;
+    padding: 0.5%;
+}
+
+#map {
+  position:relative;
+  left:50%;
+  height: 100%;
+  width: 50%;
+  padding: 0.5%
 }
