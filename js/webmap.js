@@ -178,7 +178,7 @@ var baseMaps = {
 	"CartoDB - Dark Version":CartoDB_DarkMatter,
 	World Imagery": Esri_WorldImagery,
 	"OSM back-up": OSMcol*/
-	'Map': OSMcol,
+	"Open Street Map": OSMcol,
 	"Open Topographic Map": OpenTopoMap,
 	"World Imagery": Esri_WorldImagery,
 	"HERE - Hybrid": HERE_hybridDay,
