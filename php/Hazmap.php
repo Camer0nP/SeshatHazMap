@@ -2,10 +2,9 @@
 <html>
 <body>
 
-<h1>My first PHP page</h1>
-
 <?php
-echo "Hello World!";
+$db = pg_connect("host=41.185.93.18 dbname=seshat user=seshat password=seshat@#123");
+$query = "INSERT INTO hazard VALUES ('$_POST[]')"
 ?>
 
 </body>
