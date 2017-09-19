@@ -108,9 +108,13 @@ var OSMcol = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 /*var wmsLayer = L.tileLayer.wms('http://frikancarto.co.za:8080/geoserver/South_Africa/ows?',
 {layers: 'South_Africa:Province_SA'}).addTo(map*/
-//var wmsLayer = L.tileLayer.wms('https://demo.boundlessgeo.com/geoserver/ows?', {
-    //layers: 'nasa:bluemarble'
-//}).addTo(map);
+var Hazardwms = L.tileLayer.wms('http://geodev.co.za:8080/geoserver/seshat/wms?', {
+    layers: 'seshat:Hazard',
+    format: 'image/png',
+    transparent: true
+
+}).addTo(map);
+
 var OpenTopoMap = L.tileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
@@ -188,6 +192,6 @@ var baseMaps = {
   'Light': MQ.lightLayer()*/
 };
 var overlayMaps = {
-    "Popups": popups
+"Hazards": Hazardwms
 };
 new L.control.layers(baseMaps, overlayMaps).addTo(map);
